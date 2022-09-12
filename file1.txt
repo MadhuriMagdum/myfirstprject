@@ -1,0 +1,20 @@
+package regexPattern;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexDemo {
+public static void main(String[] args) {
+	Pattern pt=Pattern.compile("hi");
+	Matcher mt=pt.matcher("Hello world,hi java ");
+	boolean res=mt.find();
+	
+if (res)
+	{System.out.println("match");
+	}
+else
+	{System.out.println("not match");}
+
+}
+
+}
